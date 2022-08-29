@@ -173,6 +173,13 @@ $("input").keypress((e) => {
 $("h4").on("click", function () {
   $(this).css("color", "purple");
 }); // on this point, upon click any given event, it changes to purple color.
-$("button").on("mouseenter", () => {
+$("button").on("mouseenter", function () {
   $(this).css("font-weight", "bold");
 });
+
+$("button").on("mouseleave", function () {
+  $(this).css("font-weight", "normal");
+});
+
+//effect
+$(".effect").fadeOut();
