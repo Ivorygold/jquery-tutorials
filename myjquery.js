@@ -165,3 +165,14 @@ $("button").click(function () {
 });
 
 //keyprss
+$("input").keypress((e) => {
+  console.log("pressed a key");
+}); // any time a key is typed on the box, it makes an indication on the console.
+
+//on()
+$("h4").on("click", function () {
+  $(this).css("color", "purple");
+}); // on this point, upon click any given event, it changes to purple color.
+$("button").on("mouseenter", () => {
+  $(this).css("font-weight", "bold");
+});
