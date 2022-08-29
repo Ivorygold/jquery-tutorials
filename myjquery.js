@@ -182,4 +182,16 @@ $("button").on("mouseleave", function () {
 });
 
 //effect
-$(".effect").fadeOut();
+/*$("button").on("click", function () {
+  $(".effect").fadeOut(1000);
+});
+
+$("button").on("click", function () {
+  $(".effect").fadeIn(1000);
+});*/
+
+$("button").on("click", function () {
+  $(".effect").fadeToggle(4000);
+});
+
+//slide effect
