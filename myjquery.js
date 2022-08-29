@@ -112,3 +112,56 @@ $("#moveAround").click(function () {
     top: 0,
   });
 });
+
+$("h2").css("color", "black");
+$("h2").css({
+  background: "orange",
+  border: "2px solid black",
+  textAlign: "center",
+});
+$("h1").text("great");
+$("ul li:first").html("I will kidnap you sir");
+
+$("img").css({
+  width: "300px",
+  height: "300px",
+});
+
+//attr()
+//this can be used to change a src attribute
+$("img").attr(
+  "src",
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Newfoundland_Pine_Marten.jpg",
+  ""
+);
+
+//vall method
+//vall helps us extract the value from the input.
+//note that vall stands for value.
+//its used to change the value of an input
+//it works on things or elements that has value attr
+
+$("input").val("enty string");
+
+//addclass
+$("h1").addClass("correct");
+
+$("h3").addClass("wrong");
+
+//toggle class
+//produces a strike line on values
+$("li").first().toggle("done");
+
+//addevent on jquery
+//the three major eventsare
+//click(), keypress(), and on()
+
+$("h1").click(function () {
+  alert("h1 clicked");
+});
+
+$("button").click(function () {
+  $(this).css("background", "gray");
+});
+
+//keyprss

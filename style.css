@@ -36,3 +36,12 @@ header {
   text-align: center;
   position: relative;
 }
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: "yellow";
+  text-align: center;
+}
